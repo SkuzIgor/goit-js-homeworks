@@ -1,18 +1,14 @@
-// "use strict";
-// const ADMIN_PASSWORD = "jqueryismyjam";
-// let message;
+"use strict";
+const ADMIN_PASSWORD = 'jqueryismyjam';
+let message;
+let input = prompt('Введите пароль.');
+if (input === null); {
+  message = ('Отменено пользователем!');
+}
+if (input === ADMIN_PASSWORD) {
+  message = ('Добро пожаловать!')
+} else {
+  message = ('Доступ запрещен, неверный пароль!')
+}
 
-// let input = prompt("Enter password");
-// if (input === null) {
-//   message = "Cancelled by user";
-// } else if (input === ADMIN_PASSWORD) {
-//   message = "Welcome!";
-// } else {
-//   message = "Access denied. Wrong password.";
-// }
-
-// alert(message);
-
-
-
-console.log('qwerty'.includes('b'));
+console.log(message);
